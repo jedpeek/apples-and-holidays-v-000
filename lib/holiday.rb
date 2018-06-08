@@ -41,9 +41,9 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
 end
 
 def all_winter_holiday_supplies(holiday_hash)
-  winter_supplies = []
-winter_supplies << holiday_hash[:winter][:christmas]
-winter_supplies << holiday_hash[:winter][:new_years]
+winter_supplies = []
+winter_supplies << holiday_hash[:winter][:christmas] && holiday_hash[:winter][:new_years]
+winter_supplies <<
 winter_supplies.flatten
 
 end

@@ -49,9 +49,8 @@ end
 
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |seasons|
-    binding.pry
     seasons.each do |holidays|
-
+          binding.pry
     end
   end
 
